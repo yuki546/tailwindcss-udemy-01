@@ -2,27 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
-.easy-button {
-  padding: 8px 16px;
-  background-color: #467ef7;
-  color: white;
-  border-radius: 4px;
-  font: bold;
-  margin-left: 40px;
+html,
+body {
+  scroll-behavior: smooth;
 }
 
-.easy-button:hover {
-  background-color: #386ad6;
+.secondary-title {
+  @apply text-3xl font-bold;
 }
 
-.btn {
-  @apply font-bold py-2 px-4 rounded ml-10;
+.secondary-title::before {
+  content: "";
+  @apply block w-12 h-2 bg-theme rounded-full mb-1;
 }
 
-.btn-blue {
-  @apply bg-blue-500 text-white;
+.section-paragraph {
+  @apply text-secondary my-6 w-full max-w-3xl;
 }
 
-.btn-blue:hover {
-  @apply bg-blue-600;
+.badge {
+  @apply px-4 py-2 text-sm bg-badge;
 }
