@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+html,
+body {
+  scroll-behavior: smooth;
+}
+
 .secondary-title {
   @apply text-3xl font-bold;
 }
@@ -13,4 +18,8 @@
 
 .section-paragraph {
   @apply text-secondary my-6 w-full max-w-3xl;
+}
+
+.badge {
+  @apply px-4 py-2 text-sm bg-badge;
 }
